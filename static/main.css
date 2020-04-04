@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body {
+  background-color: #63a9fe;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+html {
+  font-size: 20px;
+  font-family: 'Gotu', sans-serif;
+  font-family: 'Roboto', sans-serif; }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 700px;
+  background-color: white;
+  box-shadow: 1px 50px 75px 0px #00000059; }
+  .page header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .page main {
+    display: flex;
+    height: 100%; }
+    .page main > * {
+      flex: 50%; }
+    .page main .interest_container-list {
+      padding: 60px 0 0 50px; }
+      .page main .interest_container-list li {
+        padding: 20px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        transition: all .2s ease;
+        cursor: pointer; }
+        .page main .interest_container-list li > :first-child {
+          font-size: 15px;
+          color: lightgrey; }
+        .page main .interest_container-list li > :last-child {
+          margin-left: 10px; }
+      .page main .interest_container-list .active {
+        background: white;
+        box-shadow: 1px 1px 15px 1px #1b3eeb1c; }
+        .page main .interest_container-list .active > :first-child {
+          background-color: blue;
+          color: blue;
+          width: 15px;
+          clip-path: polygon(0% 0, 100% 50%, 50% 75%, 0% 100%); }
+    .page main .gallery {
+      flex: 70%;
+      padding: 25px 50px; }
+      .page main .gallery ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px; }
+        .page main .gallery ul li {
+          width: 180px;
+          height: 180px;
+          background-color: grey;
+          transition: transform .2s ease;
+          cursor: pointer; }
+          .page main .gallery ul li:hover {
+            transform: scale(1.1); }
+          .page main .gallery ul li img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border: 7px solid white;
+            box-shadow: 1px 1px 15px 1px #08244654; }

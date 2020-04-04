@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">    <link rel="stylesheet" href="static/main.css">
     <title>Gallery</title>
 </head>
 <body>
     <div class="page">
-        <div class="gallery">
-            <header>
-                <h1>My artists</h1>
-            </header>
-        </div>
-        <div class="interest_container">
-            <ul class="interest_container-list">
-                <li class="interest-container-list--item">cinema</li>
-                <li class="interest-container-list--item">photo</li>
-                <li class="interest-container-list--item">sport</li>
-                <li class="interest-container-list--item">music</li>
-                <li class="interest-container-list--item">travel</li>
-                <li class="interest-container-list--item">cuisine</li>
-            </ul>
-        </div>
+        <header>
+            <h1>My artists</h1>
+        </header>
+        <main>
+            <div class="interest_container">
+                <ul class="interest_container-list">
+                    <li class="interest-container-list--item active" data-activity="cinema" data-color="blue"><span>1</span><span></span>Cinema</span></li>
+                    <li class="interest-container-list--item" data-activity="photo" data-color="#8bc34a"><span>2</span><span></span>Photo</span></li>
+                    <li class="interest-container-list--item" data-activity="sport"><span>3</span><span></span>Sport</span></li>
+                    <li class="interest-container-list--item" data-activity="music"><span>4</span><span></span>Music</span></li>
+                    <li class="interest-container-list--item" data-activity="travel"><span>5</span><span></span>Travel</span></li>
+                    <li class="interest-container-list--item" data-activity="cuisine"><span>6</span><span></span>Cuisine</span></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <ul>
+                </ul>
+            </div>
+        </main>
     </div>
-    <script src="src/app.js"></script>
+    <script src="src/app.js" type="module"></script>
 </body>
 </html>
